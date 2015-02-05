@@ -13,6 +13,8 @@
 		251969BB1A834680009A8B13 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251969BA1A834680009A8B13 /* Images.xcassets */; };
 		251969BE1A834680009A8B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251969BC1A834680009A8B13 /* Main.storyboard */; };
 		251969CA1A834680009A8B13 /* HW3bTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 251969C91A834680009A8B13 /* HW3bTests.m */; };
+		251969D71A834721009A8B13 /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 251969D41A834721009A8B13 /* TodoItem.m */; };
+		251969D81A834721009A8B13 /* TodoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 251969D61A834721009A8B13 /* TodoList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		251969C31A834680009A8B13 /* HW3bTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW3bTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		251969C81A834680009A8B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		251969C91A834680009A8B13 /* HW3bTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HW3bTests.m; sourceTree = "<group>"; };
+		251969D31A834721009A8B13 /* TodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoItem.h; sourceTree = "<group>"; };
+		251969D41A834721009A8B13 /* TodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoItem.m; sourceTree = "<group>"; };
+		251969D51A834721009A8B13 /* TodoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoList.h; sourceTree = "<group>"; };
+		251969D61A834721009A8B13 /* TodoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,10 @@
 		251969AF1A83467F009A8B13 /* HW3b */ = {
 			isa = PBXGroup;
 			children = (
+				251969D31A834721009A8B13 /* TodoItem.h */,
+				251969D41A834721009A8B13 /* TodoItem.m */,
+				251969D51A834721009A8B13 /* TodoList.h */,
+				251969D61A834721009A8B13 /* TodoList.m */,
 				251969B21A834680009A8B13 /* AppDelegate.h */,
 				251969B31A834680009A8B13 /* AppDelegate.m */,
 				251969B71A834680009A8B13 /* ViewController.h */,
@@ -217,7 +227,9 @@
 			files = (
 				251969B91A834680009A8B13 /* ViewController.m in Sources */,
 				251969B61A834680009A8B13 /* main.m in Sources */,
+				251969D71A834721009A8B13 /* TodoItem.m in Sources */,
 				251969B41A834680009A8B13 /* AppDelegate.m in Sources */,
+				251969D81A834721009A8B13 /* TodoList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +416,7 @@
 				251969CF1A834680009A8B13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		251969D01A834680009A8B13 /* Build configuration list for PBXNativeTarget "HW3bTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +425,7 @@
 				251969D21A834680009A8B13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
