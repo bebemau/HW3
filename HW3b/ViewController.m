@@ -42,6 +42,19 @@
     
 }
 
+- (IBAction)ckAllowDuplicates_Clicked:(id)sender {
+    BOOL itemExists = [self.myTodoList hasItemWithTitle:self.txtItemName.stringValue];
+    NSLog(itemExists ? @"Yes" : @"No");
+    if(self.ckAllowDuplicates.state == 0)
+    {
+        if(itemExists)
+            self.btnAdd.enabled = false;
+    }
+    else
+        self.btnAdd.enabled = true;
+    
+    self.btnRemove.enabled = itemExists;
+}
 
 -(NSView*)tableView:(NSTableView*)tableView viewForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)rowIndex
 {
