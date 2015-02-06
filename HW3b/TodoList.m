@@ -47,10 +47,15 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@", item.name];
     NSArray *filtered = [self._todoList filteredArrayUsingPredicate:predicate];
     
-    for(TodoItem* i in filtered)
+    if(filtered.count != 0)
     {
-        [self._todoList removeObject:i];
+        [self._todoList removeObjectAtIndex:0];
     }
+    
+//    for(TodoItem* i in filtered)
+//    {
+//        [self._todoList removeObject:i];
+//    }
 }
 
 -(BOOL)canAddItem:(TodoItem*)item{
